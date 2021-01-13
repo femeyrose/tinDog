@@ -6,8 +6,46 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+
+  <!-- themes -->
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- owl css -->
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <!-- style css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- responsive-->
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <!-- awesome fontfamily -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-- Javascript files-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="assets/js/custom_hamburger.js"></script>
+  <script src="assets/js/jquery-3.0.0.min.js"></script>
+
+  <!-- <script type="text/javascript">    error shown at head and html when uncomment this-->
+
+    <script>
+      $(document).ready(function () {
+		$('#sidebarCollapse').on('click', function () {
+			$('#sidebar').toggleClass('active');
+			$(this).toggleClass('active');
+		});
+	});
+    </script>
+  
 </head>
 <body>
   <app-root></app-root>
 </body>
+
+
 </html>

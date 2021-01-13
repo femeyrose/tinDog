@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "tinDog"
+    }
+  },
+  "defaultProject": "tinDog",
+  "cli": {
+    "analytics": "73480f0a-e986-44dc-a04c-99021cc18b20"
+  }
 }
