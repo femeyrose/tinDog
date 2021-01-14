@@ -1,0 +1,71 @@
+<!-- css nested grids -->
+
+<html>
+    <head>
+        <title>Using CSS grid</title>
+        <style>
+            body{
+                color:white;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+            }
+
+            #content{
+                display:grid;  
+                grid-template-columns:repeat(3,1fr);
+                grid-template-rows: repeat(2,300px);  
+
+                /* align-items:start; */
+                /* alligning all the items in the content at start of line */
+                /* align-items:end;
+                justify-items:end; */
+                /* justifying to end */
+            }
+
+            #content div{
+                background: cyan;
+                padding:30px;  
+                margin:10px;
+                /* gap set b/w rows and columns including all around the margin */
+
+            }
+
+            #content div:nth-child(even){
+            background:blue;
+            
+
+             }
+             
+             .one{
+                 align-self:start;
+                 justify-self:start;
+             }
+
+             .four{
+                align-self:end;
+                 justify-self:end;
+             }
+
+             .two{
+                align-self:center;
+                 justify-self:start;
+             }
+
+             
+           
+             </style>
+    </head>
+    <body>
+        <div id="content">
+            <div class="one">1</div>
+            <div class="two">2</div>
+            <div class="three">3</div>
+            <div class="four">4</div>
+            <div class="five">5</div>
+            <div class="six">6</div>
+            
+        </div>
+    </body>
+</html>
+
+

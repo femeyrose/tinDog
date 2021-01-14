@@ -1,0 +1,79 @@
+<!-- css grid columns -->
+
+<html>
+    <head>
+        <title>Using CSS grid</title>
+        <style>
+            body{
+                color:white;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+            }
+
+            #content{
+                display:grid;  
+                /* for displaying in grid structure */
+                grid-template-columns: 30% 20% 50%; 
+                /* 1st column-30%, 2-20%, 3-50% */
+                /* 3 rows are created automatically */
+                grid-auto-rows:100px;
+                /* rows with 200px ht */
+                grid-auto-rows: minmax(100px,auto);
+                /* min ht 200px and max ht is auto */
+
+                grid-template-rows: 100px 200px 300px 400px;
+                /* 4 rows with above hts, scroll down to see the extra row */
+
+                /* grid-template-rows:repeat(3,200px); */
+                /* repeat 3 rows with 200px ht */
+
+                grid-template-rows:repeat(10,minmax(200px,auto));
+
+
+                /* grid-template-columns:1fr 2fr 3fr; */
+                /* 3 columns in fractions */
+
+                /* grid-template-columns:repeat(9,1fr); */
+                /* repeat for 9 coulumns with same fraction of 1 fr */
+
+                /* grid-column-gap: 20px; */
+                /* column gap */
+                /* grid-row-gap: 20px; */
+                /* grid-gap:20px; */
+
+
+                /* max-width:960px; */
+                /* margin:0 auto; */
+            }
+            #content div{
+                background: cyan;
+                padding:30px;  
+
+                margin:10px;
+                /* gap set b/w rows and columns including all around the margin */
+            
+
+            }
+
+            #content div:nth-child(even){
+            background:blue;
+            
+
+             }
+
+        </style>
+    </head>
+    <body>
+        <div id="content">
+            <div>body content-1</div>
+            <div>body content-2</div>
+            <div>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and w</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+    </body>
+</html>
