@@ -6,6 +6,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { HomeComponent } from './home/home.component';
 import { MosaicComponent } from './mosaic/mosaic.component';
 import { ReviewComponent } from './review/review.component';
+import { TestComponent } from './test/test.component';
 import { TrainingComponent } from './training/training.component';
 
 const routes: Routes = [
@@ -35,6 +36,10 @@ const routes: Routes = [
   },
   {
     path:'mos',component: MosaicComponent,
+  
+  },
+  {
+    path:'test',component: TestComponent,
   
   },
 ];

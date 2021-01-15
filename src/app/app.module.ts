@@ -11,6 +11,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { ReviewComponent } from './review/review.component';
 import { ContactComponent } from './contact/contact.component';
 import { MosaicComponent } from './mosaic/mosaic.component';
+import { TestComponent } from './test/test.component';
 
 firebase.initializeApp({
   apiKey: "AIzaSyDGnzKSPRLd6WmQrzpMsR5pnyQ3pdqH3rE",
@@ -33,7 +34,8 @@ firebase.initializeApp({
     GalleryComponent,
     ReviewComponent,
     ContactComponent,
-    MosaicComponent
+    MosaicComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,

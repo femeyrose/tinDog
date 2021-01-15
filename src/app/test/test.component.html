@@ -1,0 +1,297 @@
+<html>
+<head>
+    <style>
+        body{
+            color:white;
+            font-family:inherit;
+            text-align: center;
+        }
+        #content{
+            display:grid;  
+            grid-template-columns: repeat(4,1fr);
+            grid-auto-rows:minmax(200px,auto);
+            margin:0 auto;   
+            grid-gap:10px;
+            grid-template-areas:
+            "six six six six"
+            "one one one one"
+            "two two two two"
+            "two two two two"
+            "four four five five"
+            "three three three three"
+            "three three three three";
+        }
+      
+       
+        @media screen and (min-width: 760px){
+        #content{
+            display:grid;  
+            grid-template-columns: repeat(4,1fr);
+            grid-auto-rows:minmax(100px,auto);
+            margin:0 auto;   
+            grid-gap:10px;
+            grid-template-areas:
+            "one one one one"
+            "four four two two"
+            "five five two two"
+            "three three three three"
+            "three three three three"
+            "six six six six";
+        }
+    }
+   
+        
+        #content div{
+            /* background: cyan; */
+            padding:-1px;  
+        }
+        #one{
+            grid-area:one;
+        }
+        #two{
+            grid-area:two;
+        }
+        #three{
+            grid-area:three;
+        }
+        #four{
+            grid-area:four;
+        }
+        #five{
+            grid-area:five;
+        }
+        #six{
+            grid-area:six;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <div id="one">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+              
+            </div>
+        <div  id="two">
+            <div id="gallery" class="Gallery">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="title" id="title">
+                                <h2>Latest<strong class="black"> Gallery</strong></h2>
+                                <span>pposed to using 'Content here, content here', making it look like readable English. Many desktop publishing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                            <div class="row">
+                                <div class="col-md-12 mar_bottom">
+                                    <div class="Gallery_box">
+                                        <figure><img src="assets/images/gallery1.jpg" alt="#" /></figure>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="Gallery_box">
+                                        <figure><img src="assets/images/gallery4.jpg" alt="#" /></figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mar_bottom">
+                                    <div class="Gallery_box">
+                                        <figure><img src="assets/images/gallery2.jpg" alt="#" /></figure>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mar_bottom">
+                                    <div class="Gallery_box">
+                                        <figure><img src="assets/images/gallery3.jpg" alt="#" /></figure>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                    <div class="Gallery_box">
+                                        <figure><img src="assets/images/gallery5.jpg" alt="#" /></figure>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                    <div class="Gallery_box">
+                                        <figure><img src="assets/images/gallery6.jpg" alt="#" /></figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="training" class="training">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="title">
+
+                                <h2 id="exc">Exclusive<strong class="black"> training packages</strong></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="training_packages_bg" id="train">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                                <div class="training_packages_box">
+                                    <h3>SWIMMING COACH</h3>
+                                    <span>$<strong class="white_bold">85</strong></span>
+                                    <p>month</p>
+                                    <a class="BookNow" href="#">Book Now</a>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                                <div class="training_packages_box">
+                                    <h3>Tennis Champion</h3>
+                                    <span>$<strong class="white_bold">85</strong></span>
+                                    <p>month</p>
+                                    <a class="BookNow" href="#">Book Now</a>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                                <div class="training_packages_box">
+                                    <h3>Trekking Practice</h3>
+                                    <span>$<strong class="white_bold">85</strong></span>
+                                    <p>month</p>
+                                    <a class="BookNow" href="#">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div  id="three">
+
+                    <!-- <div > -->
+                        <!-- <div class="mapouter" style="width:1000%;height:400px;"> -->
+                            <div class="gmap_canvas" >
+                                <!-- <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=cheranelloor&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe> -->
+                                <iframe id="map" width="500px" height="500px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+                               
+                                <a href="https://codepen.io/123movies/full/OJROyRx"></a><br>
+                                <style>.mapouter{position:relative;text-align:right;height:500px;width:1000px;}</style>
+                                <a href="https://www.embedgooglemap.net">insert google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}
+                                </style>
+                            </div>
+                        <!-- </div> -->
+                    <!-- </div> -->
+            
+           
+        </div>
+        <div  id="four">
+            <div id="about" class="about">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                            <div class="about_img">
+                                <figure><img src="assets/images/about-img.jpg" alt="#" id="image"/></figure>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 pa-ing">
+                            <div class="about_text">
+                                <div class="about_text_box">
+                                    <h2>About<strong class="black_white" id="about"> d sports</strong></h2>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and w</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div  id="five">
+            <div id="review" class="Reviwe">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="title">
+                                <h2>Review</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="Reviwe_box">
+                                <i><img src="assets/images/title.png" alt="#"/></i>
+                                <h3>Jone due</h3>
+                                <p>It is a long established fact that a reader wil
+                                    <br> l be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it
+                                    <br>has a more-or-less normal distribution of letters,</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div  id="six">
+            <footer>
+                <!-- <div class="footer"> -->
+                    <div class="copyright">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                    <p>© 2019 Dsports Design by<a href="https://html.design/"> Free Html Template</a></p>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                    <ul class="social_icon">
+                                        <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                        <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
